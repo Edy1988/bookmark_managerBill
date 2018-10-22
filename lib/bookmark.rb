@@ -1,5 +1,5 @@
 class Bookmark
-  
+
   def initialize(name)
     @name = name
   end
@@ -8,4 +8,11 @@ class Bookmark
     @name
   end
 
+  def self.all
+    [
+      "http://www.makersacademy.com",
+      "http://www.destroyallsoftware.com",
+      "http://www.google.com"
+    ]
+  end
 end
