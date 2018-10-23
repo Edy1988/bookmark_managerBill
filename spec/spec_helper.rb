@@ -1,4 +1,5 @@
 require 'capybara/rspec'
+require 'pg'
 require 'simplecov'
 require 'simplecov-console'
 require 'capybara'
