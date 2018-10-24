@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/edytabednarz/Developer/bookmark_manager/bookmark_managerBill/spec/bookmark_spec.rb": [
+      "/Users/rebeccalelew/Projects/bookmark_managerEdyta/spec/bookmark_spec.rb": [
         1,
         null,
         1,
@@ -20,9 +20,7 @@
         null,
         1,
         null,
-        null
-      ],
-      "/Users/edytabednarz/Developer/bookmark_manager/bookmark_managerBill/spec/features/index_page_spec.rb": [
+        null,
         1,
         1,
         1,
@@ -30,7 +28,33 @@
         null,
         null
       ],
-      "/Users/edytabednarz/Developer/bookmark_manager/bookmark_managerBill/spec/features/viewing_bookmark_spec.rb": [
+      "/Users/rebeccalelew/Projects/bookmark_managerEdyta/spec/features/create_bookmark_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/rebeccalelew/Projects/bookmark_managerEdyta/spec/features/index_page_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/rebeccalelew/Projects/bookmark_managerEdyta/spec/features/viewing_bookmark_spec.rb": [
         null,
         1,
         1,
@@ -42,6 +66,6 @@
         null
       ]
     },
-    "timestamp": 1540390793
+    "timestamp": 1540396399
   }
 }

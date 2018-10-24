@@ -16,4 +16,10 @@ describe '.all' do
 
     expect(bookmarks).to include "http://www.becka.com"
   end
+
+  it 'adds a bookmark and can view it' do
+    bookmark = Bookmark.new
+    bookmark.add('www.edyta.com')
+    expect(Bookmark.all).to include 'www.edyta.com'
+  end
 end
