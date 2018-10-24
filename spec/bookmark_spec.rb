@@ -19,7 +19,7 @@ describe '.all' do
 
   it 'adds a bookmark and can view it' do
     bookmark = Bookmark.new
-    bookmark.add('www.edyta.com')
+    bookmark.add('www.edyta.com', 'edyta site')
     expect(Bookmark.all).to include 'www.edyta.com'
   end
 end

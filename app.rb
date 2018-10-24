@@ -1,5 +1,6 @@
 require 'sinatra/base'
 require './lib/bookmark'
+
 class BookmarkManager < Sinatra::Base
 
   get '/' do
@@ -8,7 +9,7 @@ class BookmarkManager < Sinatra::Base
 
   get '/bookmarks' do
     @bookmark = Bookmark.create
-    @bookmarks = Bookmark.all
+    @bookmarks = Bookmark.view_titles
     erb :bookmarks
   end
 
@@ -18,7 +19,7 @@ class BookmarkManager < Sinatra::Base
 
   post '/add_bookmarks' do
     @bookmark = Bookmark.create
-    @bookmark.add(params[:url])
+    @bookmark.add(params[:url], params[:title])
     redirect '/confirmation'
   end
 
