@@ -9,7 +9,6 @@
         1,
         1,
         1,
-        null,
         1,
         null,
         null,
@@ -56,7 +55,6 @@
         1,
         null,
         null,
-        null,
         null
       ],
       "/Users/edytabednarz/Developer/bookmark_managerBill/spec/features/delete_bookmark_spec.rb": [
@@ -91,6 +89,6 @@
         null
       ]
     },
-    "timestamp": 1540477308
+    "timestamp": 1540482932
   }
 }

@@ -3,13 +3,15 @@ require './lib/bookmark'
 
 class BookmarkManager < Sinatra::Base
 
+  before do
+    @bookmark = Bookmark.create
+  end
+
   get '/' do
     'Bookmark Manager'
   end
 
   get '/bookmarks' do
-    @bookmark = Bookmark.create
-    @bookmarks = Bookmark.view_titles
     erb :bookmarks
   end
 
@@ -18,13 +20,11 @@ class BookmarkManager < Sinatra::Base
   end
 
   post '/add_bookmarks' do
-    @bookmark = Bookmark.create
     @bookmark.add(params[:url], params[:title])
     redirect '/confirmation'
   end
 
   post '/delete_page' do
-    @bookmark = Bookmark.create
     @bookmark.delete(params[:title])
     redirect '/bookmarks'
   end

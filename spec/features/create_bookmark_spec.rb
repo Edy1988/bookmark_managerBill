@@ -16,5 +16,4 @@ feature 'adding bookmarks' do
     expect(page).to have_content('transport for london')
   end
 
-
 end
