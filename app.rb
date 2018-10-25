@@ -23,6 +23,12 @@ class BookmarkManager < Sinatra::Base
     redirect '/confirmation'
   end
 
+  post '/delete_page' do
+    @bookmark = Bookmark.create
+    @bookmark.delete(params[:title])
+    redirect '/bookmarks'
+  end
+
   get '/confirmation' do
     erb :confirmation
   end

@@ -21,6 +21,15 @@ class Bookmark
     con.exec("INSERT INTO bookmarks (url, title) VALUES ('#{url}', '#{title}') ")
   end
 
+  def delete(title)
+    if ENV['RACK_ENV'] == 'test'
+      con = PG.connect :dbname => "bookmark_manager_test"
+    else
+      con = PG.connect :dbname => "bookmark_manager"
+    end
+    con.exec("DELETE FROM bookmarks WHERE title='#{title}'")
+  end
+
 
   def self.connect_to_database
     if ENV['RACK_ENV'] == 'test'

@@ -23,3 +23,12 @@ describe '.all' do
     expect(Bookmark.all).to include 'www.edyta.com'
   end
 end
+
+describe '#delete' do
+  it 'deletes a bookmark from the list' do
+    bookmark = Bookmark.new
+    bookmark.add('www.edyta.com', 'edyta site')
+    bookmark.delete('edyta site')
+    expect(Bookmark.all).not_to include('www.edyta.com')
+  end
+end
